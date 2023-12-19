@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 
      Info << nl << "Average cell Volume (V_bar): "<< avgVolume << nl << endl;
      Info << nl << "Total cell Volume (V): "<< totalVolume << nl << endl;
-     Info << nl << "Average representative length scale (h): "<< pow(avgVolume,1/3.0) << nl << endl;
+     Info << nl << "Average representative length scale (h): "<< std::pow(avgVolume,1/3.0) << nl << endl;
 
      Info<< nl << "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
         << "  ClockTime = " << runTime.elapsedClockTime() << " s"
